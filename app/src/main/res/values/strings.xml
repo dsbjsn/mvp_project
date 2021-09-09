@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">mvp_project</string>
+
+    <string name="google_service_is_not_connected">Google Service is Not Connected, Please Try Again Later</string>
+    <string name="dy_success">Successfully Subscribed</string>
+    <string name="toast_cancel_pay">Cancel Payment</string>
+    <string name="toast_google_play_error_1">Product Information Query Failed</string>
+    <string name="toast_google_play_error_2">The Product Does Not Exist</string>
+    <string name="toast_not_consume_order">You Have No Unfinished Orders</string>
+    <string name="toast_consume_success">\nThere are unfinished orders\n\nRecovery has been completed for you</string>
+    <string name="toast_consume_pending">\nThere are unfinished orders\n\nWaiting for Google transaction completion</string>
+    <string name="toast_pay_error"> Payment Failed, Please Contact Customer Service</string>
+    <string name="toast_pay_success">Successful Recharge</string>
+    <string name="toast_google_pay_tips">\nThe transaction is successful, if the book currency is not received in time\n\nplease check in a few minutes later</string>
+    <string name="toast_google_pay_connect_error">Not Connected to Google Pay Service</string>
+    <string name="open">Open</string>
+    <string name="float_view_tips">Remove ADs and Unlock More Features</string>
+    <string name="add_pic_first">Please Add Pictures First</string>
+    <string name="edit_tips">Choose A Photo to Make Your Sticker</string>
+</resources>

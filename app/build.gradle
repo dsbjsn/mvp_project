@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.zygame.mvp_project"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //RxJava
+    implementation "io.reactivex.rxjava2:rxjava:2.1.9"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+
+    //OkHttp3
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+
+    //google ads
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+    implementation 'com.google.android.ads:mediation-test-suite:2.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.1'
+    implementation 'androidx.ads:ads-identifier:1.0.0-alpha04'
+
+    //google ads facebook adapter
+    implementation 'com.google.ads.mediation:facebook:6.5.1.1'
+
+    //google pay
+    implementation 'com.android.billingclient:billing:4.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:28.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
+}
